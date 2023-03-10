@@ -3,6 +3,7 @@
     --darker: #1F2937;
     --darkest: #111827;
     --gray: #6B7280;
+    --lightgray: #d3d5db;
     --light: #EEE;
     --pink: #EC4899;
     --purple: #8B5CF6;
@@ -19,7 +20,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--dark);
-    color: white;
+    transition: 0.4s;
+}
+
+.light {
+    background-color: var(--light);
+    transition: 0.4s;
 }
 
 header {
@@ -38,6 +44,7 @@ header {
     border-radius: 20px;
     margin: 20px;
     right: 0px;
+    cursor: pointer;
 }
 
 .slider {
@@ -48,6 +55,12 @@ header {
     top: 5px;
     left: 5px;
     border-radius: 50%;
+    transition: 0.4s;
+}
+
+.light .slider {
+    transform: translateX(20px);
+    transition: 0.4s;
 }
 
 header h1 {
@@ -76,6 +89,11 @@ input, button {
     border-radius: 1rem;
     margin-right: 1rem;
     font-size: 1.25rem;
+}
+
+.light #new_task_input {
+    background-color: var(--lightgray);
+    color: var(--darker);
 }
 
 #new_task_input::placeholder {
@@ -129,6 +147,10 @@ main {
     margin-bottom: 1rem;
 }
 
+.light #tasks .task {
+    background-color: white;
+}
+
 #tasks .task .content {
     flex: 1 1 0%;
 }
@@ -139,6 +161,10 @@ main {
     width: 100%;
     display: block;
     transition: 0.4s;
+}
+
+.light #tasks .task .content .text {
+    color: var(--darkest);
 }
 
 #tasks .task .content .text:not(:read-only) {
