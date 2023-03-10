@@ -1,7 +1,13 @@
 window.addEventListener('load', () => {
+    const switchButton = document.querySelector(".switch");
     const form = document.querySelector("#new_task_form");
     const input = document.querySelector("#new_task_input");
     const list_el = document.querySelector("#tasks");
+
+    switchButton.addEventListener('click', () => {
+        document.body.classList.toggle("light");
+        console.log("mode toggled");
+    });
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
