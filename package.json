@@ -1,0 +1,22 @@
+{
+  "name": "crezot-todo-app",
+  "version": "1.0.0",
+  "description": "The simple todo app to create, edit, and delete tasks.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Breeze-Night/Crezot-Todo-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Breeze-Night/Crezot-Todo-App/issues"
+  },
+  "homepage": "https://github.com/Breeze-Night/Crezot-Todo-App#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
